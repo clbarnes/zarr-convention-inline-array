@@ -4,7 +4,7 @@ import { join, extname } from "path";
 import { execSync } from "child_process";
 
 const examplesDir = "examples";
-const schemaFile = "schema.json";
+const schemaFile = "examples.schema.json";
 
 async function runTests() {
   console.log("🧪 Running validation tests...\n");
