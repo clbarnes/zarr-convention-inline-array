@@ -1,41 +1,27 @@
 {
-  "zarr_format": 3,
-  "node_type": "group",
-  "attributes": {
-    "zarr_conventions": [
-      {
-        "schema_url": "https://raw.githubusercontent.com/clbarnes/zarr-conventions-inline-array/refs/tags/v1/schema.json",
-        "spec_url": "https://github.com/clbarnes/zarr-conventions-inline-array/blob/v1/README.md",
-        "uuid": "551e1edc-9717-4795-b149-5b855b00648c",
-        "name": "inline-array"
-      }
-    ],
-    "array": {
-      "data_type": {
-        "name": "struct",
-        "configuration": {
-          "fields": [
-            {
-              "name": "a",
-              "data_type": "float32"
-            },
-            {
-              "name": "b",
-              "data_type": "int8"
-            }
-          ]
-        }
-      },
-      "values": [
+  "data_type": {
+    "name": "struct",
+    "configuration": {
+      "fields": [
         {
-          "a": 1.5,
-          "b": -1
+          "name": "a",
+          "data_type": "float32"
         },
         {
-          "a": "Infinity",
-          "b": 127
+          "name": "b",
+          "data_type": "int8"
         }
       ]
     }
-  }
+  },
+  "values": [
+    {
+      "a": 1.5,
+      "b": -1
+    },
+    {
+      "a": "Infinity",
+      "b": 127
+    }
+  ]
 }
