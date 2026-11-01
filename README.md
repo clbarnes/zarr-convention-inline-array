@@ -1,4 +1,4 @@
-# Template Convention Metadata
+# Inline Array Convention Metadata
 
 - **UUID**: 551e1edc-9717-4795-b149-5b855b00648c
 - **Name**: Inline Array
@@ -12,7 +12,7 @@
 
 This convention defines a JSON object which can be interpreted the same as a Zarr array.
 The goal is to allow small arrays to be inlined in a way which is consistent across data types and implementations;
-avoiding the cost of multiple (possibly network-bound) IO operations for minuscule amounts of data.
+avoiding the cost of multiple (possibly network-bound) IO operations and file system inodes for minuscule amounts of data.
 
 ## Motivation
 
@@ -116,7 +116,7 @@ The vast majority of Zarr arrays are numeric.
 `float64` is the numeric type JSON was designed to encode.
 Having defaults for most fields was a design goal, to keep the metadata slim.
 
-## Known Implementations
+<!-- ## Known Implementations
 
 This section helps potential implementers assess the convention's maturity and adoption, and provides a way for the community to collaborate on future revisions.
 
@@ -126,13 +126,7 @@ This section helps potential implementers assess the convention's maturity and a
   - Language: Python/JavaScript/Rust/etc.
   - Status: Experimental/Stable/Production
   - Maintainer: @github-handle
-  - Since: Version X.Y or Date
-
-- **[Another Implementation](https://link)** - Description
-  - Language: Language
-  - Status: Status
-  - Maintainer: @handle
-  - Since: Version/Date
+  - Since: Version X.Y or Date -->
 
 ## Acknowledgements
 
